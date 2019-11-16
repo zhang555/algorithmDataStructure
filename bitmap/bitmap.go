@@ -4,6 +4,10 @@ type BitMap struct {
 	slice []uint64
 }
 
+func New() *BitMap {
+	return &BitMap{}
+}
+
 func (b *BitMap) Get(i uint) bool {
 	var slicePosition = i >> 6
 	var bitPosition uint64 = 1 << (i & (64 - 1))
