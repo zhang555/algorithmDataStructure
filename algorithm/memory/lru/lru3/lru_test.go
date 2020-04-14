@@ -1,7 +1,7 @@
 package lru3
 
 import (
-	"algorithmDataStructure/lru"
+	"algorithmDataStructure/algorithm/memory/lru"
 	"testing"
 )
 

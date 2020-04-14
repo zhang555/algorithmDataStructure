@@ -1,7 +1,7 @@
-package lru1
+package lru2
 
 import (
-	"algorithmDataStructure/lru"
+	"algorithmDataStructure/algorithm/memory/lru"
 	"testing"
 )
 

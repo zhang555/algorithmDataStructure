@@ -1,7 +1,7 @@
 package clock1_test
 
 import (
-	"algorithmDataStructure/clock/clock1"
+	"algorithmDataStructure/algorithm/memory/clock/clock1"
 	"math/rand"
 	"testing"
 	"time"

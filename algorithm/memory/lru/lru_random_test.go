@@ -1,9 +1,9 @@
 package lru
 
 import (
-	"algorithmDataStructure/lru/lru1"
-	"algorithmDataStructure/lru/lru2"
-	"algorithmDataStructure/lru/lru3"
+	"algorithmDataStructure/algorithm/memory/lru/lru1"
+	"algorithmDataStructure/algorithm/memory/lru/lru2"
+	"algorithmDataStructure/algorithm/memory/lru/lru3"
 	"math/rand"
 	"testing"
 	"time"
