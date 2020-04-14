@@ -16,6 +16,7 @@ type Edge struct {
 }
 
 //拓扑排序， 先找到没有入边的点， 去掉这个点， 循环
+//假设点的个数是V，时间复杂度  O(V2)
 func Sort(g Graph) []string {
 	var result []string
 	l := len(g.Entity)
@@ -30,6 +31,7 @@ func Sort(g Graph) []string {
 	return result
 }
 
+//找到没有入边的点
 func findNewVertexOfIndegreeOfZero(g Graph) string {
 	var edges []Edge
 	for _, v := range g.Entity {

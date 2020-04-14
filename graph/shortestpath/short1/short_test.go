@@ -32,7 +32,7 @@ func ShortestPath(g Graph, start string, end string) ([]string, error) {
 	}
 	vertexKnown[start] = ForShortest{Index: 0}
 	for i := 0; i < len(g.Entity); i++ {
-		log.Println(vertexKnown)
+		//log.Println(vertexKnown)
 		for vertex, shortest := range vertexKnown {
 			if shortest.Index == i {
 				for _, edge := range g.Entity[vertex] {
