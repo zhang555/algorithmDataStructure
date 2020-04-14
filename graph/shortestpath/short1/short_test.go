@@ -22,6 +22,8 @@ type ForShortest struct {
 }
 
 //无权重的情况下，找到最短路径
+//从出发点开始，找到可以到达的节点，再找新节点的可以到达的节点，循环。
+//广度优先
 func ShortestPath(g Graph, start string, end string) ([]string, error) {
 	vertexKnown := make(map[string]ForShortest)
 	if _, ok := g.Entity[start]; !ok {
@@ -32,7 +34,7 @@ func ShortestPath(g Graph, start string, end string) ([]string, error) {
 	}
 	vertexKnown[start] = ForShortest{Index: 0}
 	for i := 0; i < len(g.Entity); i++ {
-		//log.Println(vertexKnown)
+		log.Println(vertexKnown)
 		for vertex, shortest := range vertexKnown {
 			if shortest.Index == i {
 				for _, edge := range g.Entity[vertex] {
